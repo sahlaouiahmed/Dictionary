@@ -101,8 +101,7 @@ main {
 }
 
 #error {
-    padding-top: 10px;
+    padding-top: 15px;
     text-align: center;
-    font-size: small;
     color: #5a95ff;
 }
