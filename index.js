@@ -14,7 +14,7 @@ jsBtn.addEventListener("click", () => {
         .then((Response) => Response.json()) //if returning a value 
         .then((data) => {
             console.log(data);//checking if the output is correct
-            //insertion of the input's definition in the HTML content
+            //insertion of the input's definition into the HTML content.
             jsResult.innerHTML = `<div class="word">
                 <h3>${input}</h3>
                 <button onclick="playAudio()">
@@ -41,6 +41,7 @@ jsBtn.addEventListener("click", () => {
         });
 
 });
+
 function playAudio() {
     audio.play();
 }
