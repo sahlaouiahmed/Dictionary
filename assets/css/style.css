@@ -1,6 +1,6 @@
 * {
-    margin: 3px;
-    padding: 3px;
+    margin: 2.5px;
+    padding: 2.5px;
     box-sizing: border-box;
 }
 
@@ -12,6 +12,7 @@ body {
 main {
     font-family: Arial, Helvetica, sans-serif;
     width: min(95vw, 31.25em);
+    height: 50%;
     position: absolute;
     margin: auto;
     left: 0;

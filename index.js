@@ -30,7 +30,7 @@ jsBtn.addEventListener("click", () => {
             </p>
             <p class="example">
             ${data[0].meanings[0].definitions[0].example
-                || "No Example"}
+                || "No Example available"}
             </p>`;
             audio.setAttribute("src", `${data[0].phonetics[1].audio}`);
             console.log(audio);
