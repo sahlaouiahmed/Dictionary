@@ -9,10 +9,12 @@ const jsBtn = document.getElementById("search-btn");
 jsBtn.addEventListener("click", () => {
     let input = document.getElementById("input-box").value;
     console.log(input);
+    //using the fetch method to communicate with dictionary API and get a definition for our inputs
     fetch(`${url}${input}`)//request to get the word meaning from the dictionary api 
         .then((Response) => Response.json()) //if returning a value 
         .then((data) => {
             console.log(data);//checking if the output is correct
+            //insertion of the input's definition in the HTML content
             jsResult.innerHTML = `<div class="word">
                 <h3>${input}</h3>
                 <button onclick="playAudio()">
