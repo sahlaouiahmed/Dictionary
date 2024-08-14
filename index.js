@@ -35,7 +35,7 @@ jsBtn.addEventListener("click", () => {
         })
         //if the input is empty or word not found (wrong input => error).
         .catch(() => {
-            jsResult.innerHTML = `<h5 id ="error">something is wrong, try again!</h5>`;
+            jsResult.innerHTML = `<h5 id ="error">Wrong input, try again!</h5>`;
         });
 
 });
