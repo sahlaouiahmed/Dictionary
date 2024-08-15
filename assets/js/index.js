@@ -28,14 +28,19 @@ jsBtn.addEventListener("click", () => {
             <p class="meaning">
             ${data[0].meanings[0].definitions[0].definition}
             </p>
-            <p class="example">
-            ${data[0].meanings[0].definitions[0].example
-                || "No Example available"}
+            <p class="example"> Example:
+            ${data[0].meanings[0].definitions[0].example || "No example found"}
+            </p>
+            <p class="synonyms"> Synonyms:
+            ${data[0].meanings[0].synonyms[0] || "No synonyms"}
+            </p>
+            <p class="antonyms"> Antonyms:
+            ${data[0].meanings[0].antonyms[0] || "No antonyms" }
             </p>`;
             audio.setAttribute("src", `${data[0].phonetics[1].audio}`);
             console.log(audio);
         })
-        //if the input is empty or word not found (wrong input => error).
+        //if the input is empty or not a noun (wrong input => error).
         .catch(() => {
             jsResult.innerHTML = `<h5 id ="error">Wrong input, try again!</h5>`;
         });

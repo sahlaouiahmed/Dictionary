@@ -5,16 +5,17 @@
 }
 
 body {
+    font-family: Arial, Helvetica, sans-serif;
     height: 100vh;
     background: rgb(236, 232, 232);
 }
 
 main {
-    font-family: Arial, Helvetica, sans-serif;
-    width: min(130vw, 40em);
-    height: 50%;
+    
+    width: min(96vw, 32em);
     position: absolute;
     margin: auto;
+    margin-top: 60px;
     left: 0;
     right: 0;
     top: 1.875em;
@@ -22,7 +23,11 @@ main {
     background-color: whitesmoke;
     box-shadow: 0 1em 2em rgba(0, 0, 0, .3);
 }
-
+h1 {
+    margin-top: 20px;
+    text-align: center;
+    color: #5a95ff;
+}
 .search-box {
     position: relative;
     display: grid;
@@ -96,6 +101,11 @@ main {
     color: #434545;
     font-style: italic;
     border-left: 5px solid #5a95ff;
+    padding-left: 20px;
+    margin-top: 30px;
+}
+.antonyms , .synonyms{
+    color: #434545;
     padding-left: 20px;
     margin-top: 30px;
 }
