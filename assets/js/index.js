@@ -32,10 +32,10 @@ jsBtn.addEventListener("click", () => {
             ${data[0].meanings[0].definitions[0].example || "No example found"}
             </p>
             <p class="synonyms"> Synonyms:
-            ${data[0].meanings[0].synonyms[0] || "No synonyms"}
+            ${data[0].meanings[0].synonyms[0] || "No synonyms found"}
             </p>
             <p class="antonyms"> Antonyms:
-            ${data[0].meanings[0].antonyms[0] || "No antonyms" }
+            ${data[0].meanings[0].antonyms[0] || "No antonyms found" }
             </p>`;
             audio.setAttribute("src", `${data[0].phonetics[1].audio}`);
             console.log(audio);
