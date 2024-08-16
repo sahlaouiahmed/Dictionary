@@ -5,7 +5,6 @@ const jsResult = document.getElementById("result");
 const audio = document.getElementById("sound");
 const jsBtn = document.getElementById("search-btn");
 
-//
 jsBtn.addEventListener("click", () => {
     let input = document.getElementById("input-box").value;
     console.log(input);
@@ -35,10 +34,10 @@ jsBtn.addEventListener("click", () => {
                 ${data[0].meanings[0].definitions[0].example || "No example found"}
                 </p>
                 <p class="synonyms"> Synonyms:
-                ${data[0].meanings[0].synonyms || "No synonyms found"}
+                ${data[0].meanings[0].synonyms || ""}
                 </p>
                 <p class="antonyms"> Antonyms:
-                ${data[0].meanings[0].antonyms || "No antonyms found"}
+                ${data[0].meanings[0].antonyms || ""}
                 </p>
                 <br>
                 <br>
@@ -60,10 +59,10 @@ jsBtn.addEventListener("click", () => {
                 ${data[0].meanings[1].definitions[0].example || "No example found"}
                 </p>
                 <p class="synonyms"> Synonyms:
-                ${data[0].meanings[1].synonyms || "No synonyms found"}
+                ${data[0].meanings[1].synonyms || ""}
                 </p>
                 <p class="antonyms"> Antonyms:
-                ${data[0].meanings[1].antonyms || "No antonyms found"}
+                ${data[0].meanings[1].antonyms || ""}
                 </p>`;
             }
 
@@ -85,10 +84,10 @@ jsBtn.addEventListener("click", () => {
                 ${data[0].meanings[0].definitions[0].example || "No example found"}
                 </p>
                 <p class="synonyms"> Synonyms:
-                ${data[0].meanings[0].synonyms || "No synonyms found"}
+                ${data[0].meanings[0].synonyms || ""}
                 </p>
                 <p class="antonyms"> Antonyms:
-                ${data[0].meanings[0].antonyms || "No antonyms found"}
+                ${data[0].meanings[0].antonyms || ""}
                 </p>`;
 
             }
@@ -110,10 +109,10 @@ jsBtn.addEventListener("click", () => {
                 ${data[0].meanings[0].definitions[0].example || "No example found"}
                 </p>
                 <p class="synonyms"> Synonyms:
-                ${data[0].meanings[0].synonyms || "No synonyms found"}
+                ${data[0].meanings[0].synonyms || ""}
                 </p>
                 <p class="antonyms"> Antonyms:
-                ${data[0].meanings[0].antonyms || "No antonyms found"}
+                ${data[0].meanings[0].antonyms || ""}
                 </p>
                 <br>
                 <br>
@@ -135,10 +134,10 @@ jsBtn.addEventListener("click", () => {
                 ${data[0].meanings[1].definitions[0].example || "No example found"}
                 </p>
                 <p class="synonyms"> Synonyms:
-                ${data[0].meanings[1].synonyms || "No synonyms found"}
+                ${data[0].meanings[1].synonyms || ""}
                 </p>
                 <p class="antonyms"> Antonyms:
-                ${data[0].meanings[1].antonyms || "No antonyms found"}
+                ${data[0].meanings[1].antonyms || ""}
                 </p>
                 <br>
                 <br>
@@ -160,10 +159,10 @@ jsBtn.addEventListener("click", () => {
                 ${data[0].meanings[2].definitions[0].example || "No example found"}
                 </p>
                 <p class="synonyms"> Synonyms:
-                ${data[0].meanings[2].synonyms || "No synonyms found"}
+                ${data[0].meanings[2].synonyms || ""}
                 </p>
                 <p class="antonyms"> Antonyms:
-                ${data[0].meanings[2].antonyms || "No antonyms found"}
+                ${data[0].meanings[2].antonyms || ""}
                 </p>`; 
             }
             audio.setAttribute("src", `${data[0].phonetics[1].audio}`);
