@@ -3,7 +3,7 @@
 
 Find the meaning is a website using HTML , CSS and Javascript , where you can search for the meanings of englich words , how to pronouce them , an example using the word you are searching for , synonyms and antonyms.
 
-To find the meaning of a word , I used javascript to communicate with a free dictionary API https://dictionaryapi.dev/ .
+To find the meaning of a word , I used javascript to communicate with a free dictionary API https://dictionaryapi.dev/ using the fetch method.
 
 The live link can be found here :  https://sahlaouiahmed.github.io/FindTheMeaning/
 
@@ -24,6 +24,11 @@ To make sure that my HTML and CSS  codes contain 0 errors I used : https://valid
 HTML : No errors were returned when passing through the official W3C validator https://validator.w3.org/ .
 CSS : No errors were found when passing through the official Jigsaw validator https://jigsaw.w3.org/css-validator/ .
 JS : Google dev tools and Python tutor to visualize the execution of my code https://pythontutor.com/visualize.html#mode=edit
+
+#### Performance:
+
+![lighthouse](assets/images/media/lighthouse.png)
+
 
 
 ## Deployment :

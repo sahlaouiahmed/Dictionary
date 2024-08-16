@@ -9,8 +9,8 @@ jsBtn.addEventListener("click", () => {
     let input = document.getElementById("input-box").value;
     console.log(input);
     //using the fetch method to communicate with dictionary API and get a definition for our inputs
-    fetch(`${url}${input}`)//request to get the word meaning from the dictionary api 
-        .then((Response) => Response.json()) //if returning a value 
+    fetch(`${url}${input}`) 
+        .then((Response) => Response.json())
         .then((data) => {
             console.log(data);//checking if the output is correct
             //insertion of the input's definition into the HTML content.
@@ -179,3 +179,4 @@ jsBtn.addEventListener("click", () => {
 function playAudio() {
     audio.play();
 }
+
