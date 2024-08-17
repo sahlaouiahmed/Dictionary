@@ -48,6 +48,6 @@ The live link can be found here - https://sahlaouiahmed.github.io/FindTheMeaning
 
 3. The sound icon was taken from https://fontawesome.com/ .
 
-## Limitation and future recommendations
+## Limitations and future recommendations
 
 I can develop this site in the future by adding all possible definitions for more informations, because in this project I just took the fisrt element of the data ( data [0] ) that I got from the free Dictionary API.
